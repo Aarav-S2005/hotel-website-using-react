@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {motion} from "framer-motion";
 
-export default function LazyImage({ src, alt, align }) {
+export default function LazyImage({ src, alt, align, animate }) {
     const [loaded, setLoaded] = useState(false);
 
     return (
@@ -19,7 +19,7 @@ export default function LazyImage({ src, alt, align }) {
                 animate={{ opacity: loaded ? 1 : 0 }}
                 transition={{ duration: 0.5 }}
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
-                whileHover={{rotate: align === "left" ? -5 : 5, scale: 1.05}}
+                whileHover={{rotate: !animate ? "" : align === "left" ? -5 : 5, scale: animate ? 1.05 : 1}}
             />
         </div>
     );

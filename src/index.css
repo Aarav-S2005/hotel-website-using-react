@@ -21,7 +21,10 @@
     --color-backg: #c8deab;
 }
 
-.button-hover:hover{
-    background: linear-gradient(135deg, #e8f5e9, #66bb6a);
-
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
