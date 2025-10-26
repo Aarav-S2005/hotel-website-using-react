@@ -1,1 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Lexend:wght@100..900&family=Quintessential&display=swap');
 @import "tailwindcss";
+
+.font-cookie {
+    font-family: 'Cookie', cursive;
+}
+
+.font-lexend {
+    font-family: 'Lexend', sans-serif;
+}
+
+.font-quintessential {
+    font-family: 'Quintessential', cursive;
+}
+
+@theme{
+    --color-primary: #556B2F;
+    --color-secondary: #8FA31E;
+    --color-tertiary: #C6D870;
+    --color-light: #EFF5D2;
+    --color-backg: #c8deab;
+}
+
+.button-hover:hover{
+    background: linear-gradient(135deg, #e8f5e9, #66bb6a);
+
+}
