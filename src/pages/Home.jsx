@@ -9,6 +9,7 @@ import DisplayWhenScrolled from "../components/DisplayWhenScrolled.jsx";
 import Amenities from "../components/Amenities.jsx";
 import Logo from "../assets/image/logo.png";
 import VillasAndSuites from "../components/VillasAndSuites.jsx";
+import Title from "../components/Title.jsx";
 
 export default function Home(){
 
@@ -30,17 +31,17 @@ export default function Home(){
                 <ArrowBigUp className={"w-6 h-6"} />
             </button>
             <NavBar/>
-            <div className={"flex flex-col justify-center items-center pb-10"}>
-                <img src={HotelMainImage} alt="hotel" className="w-full h-[70vh] object-cover bg-no-repeat"/>
-                <div className={"flex flex-col items-center relative justify-center py-10 px-12 bg-light mt-10 rounded-full"}>
-                    <img src={Logo} alt="Logo" className={"w-[96px] h-[96px] absolute top-2 opacity-20"} />
-                    <h2 className={"font-cookie text-5xl text-primary"}>Mellora</h2>
-                    <p className={"font-lexend text-black text-center"}>
-                        Welcome to Mellora — where luxury meets nature’s serenity.<br />
-                        Nestled in tranquil surroundings, Mellora offers an oasis of calm designed to rejuvenate your mind and soul.<br/>
-                        Experience refined comfort, elegant design, and the soothing embrace of nature — all in one perfect retreat.<br/>
-                    </p>
-                </div>
+            <img src={HotelMainImage} alt="hotel" className="w-full h-[70vh] object-cover bg-no-repeat"/>
+            <div className={"w-fit flex mx-auto flex-col items-center relative justify-center py-10 px-12 bg-light mt-10 rounded-full mb-6 md:mb-0"}>
+                <img src={Logo} alt="Logo" className={"w-[96px] h-[96px] absolute top-2 opacity-20"} />
+                <Title text={"Mellora"} />
+                <p className={"font-lexend text-black text-center mt-3"}>
+                    Welcome to Mellora — where luxury meets nature’s serenity.<br />
+                    Nestled in tranquil surroundings, Mellora offers an oasis of calm designed to rejuvenate your mind and soul.<br/>
+                    Experience refined comfort, elegant design, and the soothing embrace of nature — all in one perfect retreat.<br/>
+                </p>
+            </div>
+            <div className={"flex flex-col justify-center items-center pb-10 hidden md:block"}>
                 <div className="mt-10 flex flex-col gap-20 items-center">
                     {homeCardsContent.map((item, index) => (
                         <div

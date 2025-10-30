@@ -135,3 +135,56 @@ export const amenities = [
     { id: 7, icon: Coffee, title: "Executive Lounge", text: "Exclusive access to a private lounge with complimentary refreshments and business services." },
     { id: 8, icon: Binoculars, title: "Guided Nature Walks", text: "Complimentary morning and evening excursions with an expert, exploring local trails and wildlife." }
 ];
+
+export const roomDetails = [
+    {
+        path: Room1,
+        room_name: "Forest Pool Villa",
+        features: [
+            "Private, heated plunge pool",
+            "Open-air stone bathtub",
+            "Floor-to-ceiling panoramic windows",
+            "Secluded lush greenery setting"
+        ],
+        price: 36000,
+        size_sq_ft: 1500,
+        no_of_people: "2 adults, 1 child"
+    },
+    {
+        path: Room2,
+        room_name: "Garden Serenity Suite",
+        features: [
+            "Spacious private outdoor terrace",
+            "Direct access to curated gardens",
+            "Separate living and dining areas",
+            "Luxurious marble bathroom"
+        ],
+        price: 38000,
+        size_sq_ft: 900,
+        no_of_people: "2 adults, 2 children"
+    },
+    {
+        path: Room3,
+        room_name: "Lakeside Luxe Villa",
+        features: [
+            "Panoramic deck overlooking the water",
+            "Private outdoor hot tub",
+            "Contemporary elegant design",
+            "Uninterrupted tranquil water views"
+        ],
+        price: 56000,
+        size_sq_ft: 1800,
+        no_of_people: "4 adults, 2 children"
+    }
+]
+
+export const commonRoomFacilities = {
+    title: "In-Room Comfort",
+    facilities: [
+        "Free Wi-Fi",
+        "55-inch Smart TV",
+        "A/C and heating",
+        "Soundproof windows and blackout curtains",
+        "mini-bar",
+    ]
+};

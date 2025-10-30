@@ -16,7 +16,7 @@ export default function DiningCards() {
                     viewport={{ once: true, amount: 0.4 }}
                 >
                     <div className="md:w-1/2 w-full relative">
-                        <LazyImage src={item.path} alt={item.restaurant_name} align={item.align} animate={true} />
+                        <LazyImage src={item.path} alt={item.restaurant_name} align={item.align} animate={true} className={"w-full h-80"} />
                     </div>
 
                     <motion.div

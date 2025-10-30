@@ -8,7 +8,7 @@ export default function VillasAndSuitesCard() {
             {
                 villasAndSuitesContent.map(item => (
                     <div className={"flex flex-col items-center justify-between p-5 rounded-3xl w-[80%]  md:w-[25%] h-[78vh] bg-backg"}>
-                        <LazyImage src={item.path} alt={"Room"} animate={false} />
+                        <LazyImage src={item.path} alt={"Room"} animate={false} className={"w-full h-80"} />
                         <h3 className={"font-quintessential text-2xl"}>{item.name}</h3>
                         <p className={"text-wrap text-md font-lexend mb-2"}>{item.content}</p>
                         <ReserveButtons />

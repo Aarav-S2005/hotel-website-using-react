@@ -1,9 +1,10 @@
 import {footerContent, socials} from "../util/constants.js";
+import Title from "./Title.jsx";
 
 export default function Footer() {
     return (
         <footer className={"bg-backg flex flex-col items-center justify-center pt-10"}>
-            <h1 className={"text-4xl text-primary font-cookie mb-10"}>Mellora</h1>
+            <Title text={"Mellora"} />
             <div className={"flex items-center justify-evenly w-full"}>
                 {
                     footerContent.map((item) => (
@@ -11,7 +12,7 @@ export default function Footer() {
                             <p className={"font-semibold font-quintessential mb-2"}>{item.header}</p>
                             {
                                 item.list.map(l => (
-                                    <p className={"font-lexend"}>{l}</p>
+                                    <p className={"font-lexend hover:text-green-600 transition-colors duration-300 cursor-pointer"}>{l}</p>
                                 ))
                             }
                         </div>
